@@ -1,0 +1,234 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>My Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fdf6f8;
+      color: #333;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: #ffe1ec;
+      padding: 12px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      z-index: 10;
+    }
+
+    .logo {
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #444;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #c24f7a;
+    }
+
+    main {
+      max-width: 960px;
+      margin: 90px auto 40px;
+      padding: 0 16px;
+    }
+
+    section {
+      padding: 40px 0;
+      border-bottom: 1px solid #f3d6e2;
+    }
+
+    h2 {
+      margin-bottom: 10px;
+    }
+
+    .tagline {
+      color: #c24f7a;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .about-wrapper {
+      display: flex;
+      gap: 32px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .about-text {
+      flex: 2;
+      min-width: 240px;
+    }
+
+    .about-photo {
+      flex: 1;
+      min-width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      background: linear-gradient(135deg,#ffd6e8,#fae1c8);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #666;
+      font-size: 14px;
+    }
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 10px;
+    }
+
+    .chip {
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: #ffeaf3;
+      font-size: 13px;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+      gap: 16px;
+      margin-top: 16px;
+    }
+
+    .project-card {
+      padding: 16px;
+      border-radius: 12px;
+      background: #ffffff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+
+    .project-card h3 {
+      margin-top: 0;
+      margin-bottom: 6px;
+      font-size: 16px;
+    }
+
+    .project-card p {
+      font-size: 14px;
+      margin-bottom: 8px;
+    }
+
+    .project-tag {
+      font-size: 12px;
+      color: #c24f7a;
+    }
+
+    .contact-list p {
+      margin: 4px 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 16px;
+      font-size: 13px;
+      color: #777;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        padding: 10px 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Swati Parida</div>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+  
+  <section id="about">
+    <p class="tagline">Hello, I am</p>
+    <div class="about-wrapper">
+      <div class="about-text">
+        <h1>HELLO, I'M SWATI PARIDA..!!</h1>
+        <h3>UNDERGRADUATE CSE STUDENT</h3>
+        <p>
+          Short 3–4 lines about you, college, specialization and interests
+          (web dev, AI/AR‑VR, DSA etc.).
+        </p>
+      </div>
+      <div class="about-photo">
+        <img src="Smiling_Woman.jpeg" alt="Your Name" class="about-img"> 
+       
+      </div>
+    </div>
+  </section>
+
+ 
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="chips">
+      <span class="chip">HTML &amp; CSS</span>
+      <span class="chip">Java</span>
+      <span class="chip">C</span>
+      <span class="chip">DSA (Arrays, Graphs)</span>
+      <span class="chip">Operating Systems basics</span>
+      <span class="chip">Verilog / Digital Logic</span>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <span class="project-tag">Web</span>
+        <h3>Spotify Clone (Frontend)</h3>
+        <p>Simple Spotify‑style UI using HTML, CSS and basic JavaScript for layout and controls.</p>
+      </div>
+      <div class="project-card">
+        <span class="project-tag">Web</span>
+        <h3>My Profile Page</h3>
+        <p>Responsive profile page built as part of lab assignment, now extended into this portfolio.</p>
+      </div>
+      <div class="project-card">
+        <span class="project-tag">CS Fundamentals</span>
+        <h3>DSA Practice Set</h3>
+        <p>Collection of solutions for classic problems (sorting, graphs, trees) in Java/C.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="contact-list">
+      <p>Email: cse.24bcsi81@silicon.ac.in</p>
+      <p>Phone: +91-7978216460</p>
+      <p>GitHub: github.com/</p>
+      <p>LinkedIn: linkedin.com/in/swateeehh</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  © 2026 Your Name. All rights reserved.
+</footer>
+
+</body>
+</html>

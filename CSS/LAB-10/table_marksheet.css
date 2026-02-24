@@ -1,0 +1,25 @@
+table.marksheet {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table.marksheet,
+table.marksheet th,
+table.marksheet td {
+    border: 1px solid black;
+}
+
+table.marksheet th,
+table.marksheet td {
+    padding: 8px;
+}
+
+table.marksheet tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table.marksheet th {
+    background-color: grey;
+    color: white;
+    font-weight: bold;
+}

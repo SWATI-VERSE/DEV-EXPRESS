@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Form</title>
+    <style>
+        body
+		{
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: white;
+        }
+
+        /* flexbox container to center the card */
+        .page
+		{
+            min-height: 100vh;          /* full window height */
+            display: flex;
+            justify-content: center;    /* center horizontally */
+            align-items: center;        /* center vertically */
+        }
+
+        .login-card
+		{
+            width: 320px;
+            padding: 25px 20px 30px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0px 0px 8px 1px silver;  /* simple shadow */
+            text-align: center;
+        }
+
+        .login-card h2
+		{
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        .input-box
+		{
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 12px;
+            border: 1px solid gray;
+            border-radius: 4px;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+
+        .remember-row
+		{
+			display: flex;
+			justify-content: center;   /* center checkbox + text */
+			align-items: center;
+			margin-bottom: 15px;
+			font-size: 14px;
+			font-weight: bold;         /* make text bold */
+		}
+
+        .login-button
+		{
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            background-color: green;
+            color: white;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        .login-button:hover
+		{
+            background-color: darkgreen;
+        }
+    </style>
+</head>
+<body>
+
+<h3>QUESTION‑2</h3>
+
+<div class="page">
+    <div class="login-card">
+        <h2>Login</h2>
+
+        <form>
+            <input type="text" class="input-box" placeholder="Username">
+
+            <input type="password" class="input-box" placeholder="Password">
+
+            <div class="remember-row">
+                <input type="checkbox" id="remember">
+                <label for="remember">Remember Me</label>
+            </div>
+
+            <button type="submit" class="login-button">Login</button>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>

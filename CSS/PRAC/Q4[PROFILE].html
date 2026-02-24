@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* top navigation */
+        .navbar {
+            background-color: black;
+            color: white;
+            padding: 10px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar h1 {
+            font-size: 20px;
+            margin: 0;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin-left: 15px;
+            font-size: 14px;
+        }
+
+        /* hero / profile section (your old “My Profile”) */
+        .hero {
+            padding: 40px 60px;
+            display: flex;
+            align-items: center;
+            background-color: #eeeeee;
+        }
+        .hero img {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            border: 4px solid green;
+            object-fit: cover;
+            margin-right: 30px;
+        }
+        .hero h2 {
+            margin: 0 0 10px 0;
+        }
+        .hero p {
+            margin: 4px 0;
+        }
+
+        /* generic section styling */
+        section {
+            padding: 30px 60px;
+        }
+        section h3 {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        /* skills list */
+        .skills-list li {
+            margin-bottom: 4px;
+        }
+
+        /* projects grid */
+        .projects {
+            display: flex;
+            gap: 15px;
+        }
+        .project-card {
+            flex: 1;
+            border: 1px solid gray;
+            padding: 10px;
+            border-radius: 6px;
+        }
+        .project-card h4 {
+            margin-top: 0;
+        }
+
+        /* contact section */
+        .contact-info p {
+            margin: 4px 0;
+        }
+
+        /* footer */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: black;
+            color: white;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+
+<h3>QUESTION‑4</h3>
+
+<!-- simple navigation bar -->
+<div class="navbar">
+    <h1>My Portfolio</h1>
+    <div>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
+</div>
+
+<!-- this is your old “My Profile” content, enhanced -->
+<section class="hero" id="about">
+    <img src="Man.png" alt="Profile Photo">
+    <div>
+        <h2>John Doe</h2>
+        <p>A passionate web developer who loves building interactive websites.</p>
+        <p>Location: Bhubaneswar, India</p>
+    </div>
+</section>
+
+<section id="skills">
+    <h3>Skills</h3>
+    <ul class="skills-list">
+        <li>HTML, CSS</li>
+        <li>Responsive Web Design</li>
+        <li>Basic C / Java programming</li>
+    </ul>
+</section>
+
+<section id="projects">
+    <h3>Projects</h3>
+    <div class="projects">
+        <div class="project-card">
+            <h4>Portfolio Website</h4>
+            <p>A simple personal portfolio page built with HTML and CSS.</p>
+        </div>
+        <div class="project-card">
+            <h4>Login Form UI</h4>
+            <p>Styled login card using Flexbox and form elements.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h3>Contact</h3>
+    <div class="contact-info">
+        <p>Email: john.doe@example.com</p>
+        <p>Phone: +91‑9876543210</p>
+    </div>
+</section>
+
+<footer>
+    © 2026 John Doe. All rights reserved.
+</footer>
+
+</body>
+</html>
